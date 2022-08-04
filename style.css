@@ -1,115 +1,450 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+h1,
+h3 {
+  font-family: 'Merriweather', serif;
+  color: #f6426d;
+  padding: 1rem 0;
+}
+
+p {
+  font-family: 'Noto Serif', serif;
+}
+
+h3 {
+  color: #A10035;
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+/* -------------- navigation bar --------------- */
+
+.navbar {
+  background-color: #f6426d;
+  box-shadow: 0 -17px 30px 15px rgba(0, 0, 0, 1);
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 0;
+}
+.nav-link {
+  color: rgb(255, 255, 255);
+}
+
+.navbar-toggler{
+  font-size: 1rem;
+  color: #000;
+  border: none;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.logo {
+  width: 84px;
+}
+
+/* --------------- Home Page ----------------- */
+
+  .container {
+    width: 70%;
+    margin: auto;
   }
-  
-  body {
-    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/background.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    text-align: center;
+
+.text-color {
+  color: #fff;
+}
+
+.calendar {
+  display: inline-block;
+  height: 1em;
+  width: auto;
+  line-height: 1;
+  vertical-align: -0.15em;
+}
+
+.log1 {
+  margin-top: 12%;
+}
+
+.heading {
+  width: 25%;
+  margin: auto;
+  padding: 1rem;
+}
+
+.title {
+  font-size: 7rem;
+}
+
+.title2 {
+  color: #f6426d;
+  margin-top: -2rem;
+  text-align: right;
+}
+
+#demo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  border: 2px solid #f6426d;
+  width: 35%;
+  margin: auto;
+  padding: 10px;
+}
+
+.btn {
+  color: #fff;
+  background-color: #f6426d;
+  font-weight: 700;
+  padding: 9px 69px 10px;
+  margin: 2%;
+  border: none;
+  border-radius: 0;
+}
+
+.btn:hover {
+  background-color: #ed1346;
+}
+
+/* Social Icons */
+
+.social-icons .fab {
+  font-size: 44px;
+  padding: 24px 8px;
+}
+
+.fa-facebook {
+  color: rgb(66, 103, 178);
+}
+
+.fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-linkedin {
+  color: #0072b1;
+}
+
+.fa-twitter {
+  color: rgb(29, 161, 242);
+}
+
+/* ------------- Marquee ---------- */
+
+.marquee {
+  background-color: #ed1346;
+}
+
+marquee {
+  font-size: 1.3rem;
+  color: #fff;
+  height: 3rem;
+  padding: 0.6rem;
+}
+
+
+
+/* ------------ Sponsors ------------ */
+
+.container2 {
+  background-color: #FFE7BF;
+  padding-bottom: 2%;
+}
+
+.sponsors-img {
+  width: 200px;
+}
+
+
+/* ------------- Scope -------------- */
+
+.scope {
+  background-color: #FFC4C4;
+  padding: 24px;
+}
+
+.short-title {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+}
+
+/*  Abstract Section */
+
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.section2 {
+  width: 50%;
+  margin: auto;
+}
+
+mark {
+  color: #ed1346;
+  background: none;
+}
+
+table {
+  width: 100%;
+}
+
+.table {
+  width: 140%;
+  border: 0.5px solid #000;
+}
+
+thead {
+  font-size: 1rem;
+  background-color: #FF869E;
+  color: #fff;
+}
+
+tbody {
+  background-color: #faf5e4;
+  font-size: 1rem;
+}
+
+table,
+th,
+td {
+  border: 1.5px solid #000;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+/* Speakers */
+
+.core-team {
+  display: inline-block;
+  border: 2px solid #f6426d;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+
+/* REGISTRATION FEES */
+
+.dark {
+  background-color: #FFC4C4;
+  padding: 24px;
+  border: 2px solid;
+  border-radius: 16px;
+}
+
+.dark2,
+.dark3 {
+  border: 2px solid;
+  margin: 2% 0;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+h2 {
+  color: #A10035;
+  font-weight: bolder;
+}
+
+h4 {
+  color: #A10035;
+  padding: 1%;
+  font-size: 1.4rem;
+}
+
+.bank-details {
+  text-align: left;
+  width: 70%;
+  margin: auto;
+  font-size: 1.2rem;
+  color: #A10035;
+  padding: 2%;
+}
+
+
+/* ------------- Committee ------------- */
+
+label {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  display: block;
+}
+
+.slide {
+  clear: both;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  text-align: left;
+  transition: height .4s ease;
+  background-color: #FFC4C4;
+  margin: 0;
+}
+
+.slide li {
+  padding: 0;
+}
+
+#touch,
+#touch1,
+#touch2,
+#touch3 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+}
+
+#touch:checked+.slide,
+#touch1:checked+.slide,
+#touch2:checked+.slide,
+#touch3:checked+.slide {
+  height: auto;
+  padding: 2rem;
+}
+
+.dropdown {
+  width: 100%;
+  background-color: #FF869E;
+  border: 1px solid #ed1346;
+  padding: 0.5 0;
+  margin-bottom: 2%;
+}
+
+.dropdown:hover {
+  background-color: #f3708a;
+}
+
+
+/* How to reach Rourkela */
+
+.dark3 {
+  background-color: #f6426d;
+}
+
+.travel {
+  text-align: left;
+  background-color: #f6426d;
+}
+
+.travel li {
+  display: inline-block;
+  padding: 12px;
+  margin: 0;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 1rem;
+}
+
+.fab {
+  padding-left: 1rem;
+}
+
+
+
+@media(max-width: 700px) {
+
+  .container {
+    width: 100%;
   }
-  
+
   h1,
   h3 {
-    font-family: 'Merriweather', serif;
-    color: #f6426d;
-    padding: 1rem 0;
+    font-size: 1.5rem;
   }
-  
+
   p {
     font-family: 'Noto Serif', serif;
+    font-size: 0.9rem;
+    font-weight: 500;
   }
-  
-  h3 {
-    color: #A10035;
-    font-size: calc(1.375rem + 1.5vw);
+
+  .nav-link {
+    color: #fff;
+    font-size: 1rem;
   }
-  
-  /* -------------- navigation bar --------------- */
-  
-  .navbar {
-    background-color: #f6426d;
-    box-shadow: 0 -17px 30px 15px rgba(0, 0, 0, 1);
-    overflow: hidden;
-    position: sticky;
-    top: 0;
+
+  .logo {
+    width: 80px;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* --------------- Home Page ----------------- */
+
+  .log1 {
+    margin-top: 10rem;
+  }
+
+  .heading {
     width: 100%;
+    margin: auto;
     padding: 0;
   }
-  
-  .nav-link {
-    color: rgb(255, 255, 255);
-  }
-  
-  .navbar-toggler{
-    font-size: 1rem;
-    color: #000;
-    border: none;
-  }
-  
-  .navbar-toggler:focus {
-    text-decoration: none;
-    outline: 0;
-    box-shadow: none;
-  }
-  
-  .logo {
-    width: 84px;
-  }
-  
-  /* --------------- Home Page ----------------- */
-  
-    .container {
-      width: 70%;
-      margin: auto;
-    }
-  
-  .text-color {
-    color: #fff;
-  }
-  
-  .calendar {
-    display: inline-block;
-    height: 1em;
-    width: auto;
-    line-height: 1;
-    vertical-align: -0.15em;
-  }
-  
-  .log1 {
-    margin-top: 12%;
-  }
-  
-  .heading {
-    width: 25%;
-    margin: auto;
-    padding: 1rem;
-  }
-  
+
   .title {
-    font-size: 7rem;
+    font-size: 5rem;
   }
-  
+
   .title2 {
-    color: #f6426d;
+    font-size: 2.5rem;
+    width: 50%;
+    margin: auto;
     margin-top: -2rem;
     text-align: right;
   }
-  
+
   #demo {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #fff;
-    border: 2px solid #f6426d;
-    width: 35%;
-    margin: auto;
-    padding: 10px;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
   }
-  
+
   .btn {
+    width: 90%;
     color: #fff;
     background-color: #f6426d;
     font-weight: 700;
@@ -118,493 +453,157 @@
     border: none;
     border-radius: 0;
   }
-  
+
   .btn:hover {
     background-color: #ed1346;
   }
-  
+
   /* Social Icons */
-  
+
   .social-icons .fab {
-    font-size: 44px;
-    padding: 24px 8px;
+    font-size: 25px;
   }
-  
-  .fa-facebook {
-    color: rgb(66, 103, 178);
-  }
-  
-  .fa-instagram {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    -webkit-background-clip: text;
-    /* Also define standard property for compatibility */
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .fa-linkedin {
-    color: #0072b1;
-  }
-  
-  .fa-twitter {
-    color: rgb(29, 161, 242);
-  }
-  
+
   /* ------------- Marquee ---------- */
-  
+
   .marquee {
-    background-color: #ed1346;
-  }
-  
-  marquee {
-    font-size: 1.3rem;
-    color: #fff;
     height: 3rem;
-    padding: 0.6rem;
   }
-  
-  
-  
+
+  marquee {
+    font-size: 1rem;
+    padding-top: 0.7rem;
+    font-weight: 100;
+  }
+
+
   /* ------------ Sponsors ------------ */
-  
-  .container2 {
-    background-color: #FFE7BF;
-    padding-bottom: 2%;
-  }
-  
+
   .sponsors-img {
-    width: 200px;
+    width: 140px;
   }
-  
-  
+
   /* ------------- Scope -------------- */
-  
+
   .scope {
-    background-color: #FFC4C4;
-    padding: 24px;
+    padding: 24px 0;
   }
-  
+
+  .head-title {
+    font-size: 1.65rem;
+  }
+
   .short-title {
-    width: 80%;
-    margin: auto;
-    text-align: left;
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: #000;
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 2% 5%;
   }
-  
-  a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  a:hover {
-    color: #fff;
-  }
-  
+
   /*  Abstract Section */
-  
+
   .section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 2rem;
+    display: block;
+    padding: 0;
   }
-  
+
   .section2 {
-    width: 50%;
-    margin: auto;
-  }
-  
-  mark {
-    color: #ed1346;
-    background: none;
-  }
-  
-  table {
     width: 100%;
   }
-  
+
   .table {
-    width: 140%;
-    border: 0.5px solid #000;
+    width: 90%;
+    margin: auto;
   }
-  
-  thead {
-    font-size: 1rem;
-    background-color: #FF869E;
-    color: #fff;
+
+  th {
+    font-size: 0.67rem;
   }
-  
-  tbody {
-    background-color: #faf5e4;
-    font-size: 1rem;
+
+  td {
+    font-size: 0.6rem;
   }
-  
+
   table,
   th,
   td {
-    border: 1.5px solid #000;
+    border: 0.5px solid #000;
     border-collapse: collapse;
-    padding: 10px;
+    padding: 8px;
   }
-  
+
   /* Speakers */
-  
+
   .core-team {
-    display: inline-block;
-    border: 2px solid #f6426d;
-    padding: 1rem;
-    margin: 1rem;
+    width: 47%;
+    padding: 0;
+    margin: 0 1px 12px 1px;
   }
-  
-  
+
+
   /* REGISTRATION FEES */
-  
+
   .dark {
-    background-color: #FFC4C4;
-    padding: 24px;
-    border: 2px solid;
-    border-radius: 16px;
+    padding: 0;
+    border: 1px solid #000;
+    border-radius: 0px;
   }
-  
+
   .dark2,
   .dark3 {
     border: 2px solid;
     margin: 2% 0;
     padding: 24px;
-    border-radius: 16px;
+    border-radius: 0;
   }
-  
+
   h2 {
     color: #A10035;
     font-weight: bolder;
   }
-  
+
   h4 {
     color: #A10035;
     padding: 1%;
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
-  
+
   .bank-details {
     text-align: left;
-    width: 70%;
+    width: 100%;
     margin: auto;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     color: #A10035;
-    padding: 2%;
+    padding: 4%;
   }
-  
-  
-  /* ------------- Committee ------------- */
-  
-  label {
-    width: 100%;
-    text-align: left;
-    padding: 1rem;
-    color: white;
-    font-size: 1.2em;
-    cursor: pointer;
-    display: block;
-  }
-  
-  .slide {
-    clear: both;
-    width: 100%;
-    height: 0px;
-    overflow: hidden;
-    text-align: left;
-    transition: height .4s ease;
-    background-color: #FFC4C4;
-    margin: 0;
-  }
-  
+
+
+  /* Committee */
+
   .slide li {
-    padding: 0;
+    font-size: 0.8rem;
   }
-  
-  #touch,
-  #touch1,
-  #touch2,
-  #touch3 {
-    position: absolute;
-    opacity: 0;
-    height: 0;
-  }
-  
-  #touch:checked+.slide,
-  #touch1:checked+.slide,
-  #touch2:checked+.slide,
-  #touch3:checked+.slide {
-    height: auto;
-    padding: 2rem;
-  }
-  
-  .dropdown {
-    width: 100%;
-    background-color: #FF869E;
-    border: 1px solid #ed1346;
-    padding: 0.5 0;
-    margin-bottom: 2%;
-  }
-  
-  .dropdown:hover {
-    background-color: #f3708a;
-  }
-  
-  
+
+
   /* How to reach Rourkela */
-  
+
   .dark3 {
     background-color: #f6426d;
   }
-  
-  .travel {
-    text-align: left;
-    background-color: #f6426d;
-  }
-  
-  .travel li {
-    display: inline-block;
-    padding: 12px;
-    margin: 0;
-  }
-  
+
   /* Footer */
-  
+
   .footer {
-    display: flex;
-    justify-content: space-between;
+    display: block;
     text-align: center;
     padding: 1rem;
   }
-  
+
+  .footer h6 {
+    padding: 1rem 0;
+  }
+
   .fab {
     padding-left: 1rem;
   }
-  
-  
-  
-  @media(max-width: 700px) {
-  
-    .container {
-      width: 100%;
-    }
-  
-    h1,
-    h3 {
-      font-size: 1.5rem;
-    }
-  
-    p {
-      font-family: 'Noto Serif', serif;
-      font-size: 0.9rem;
-      font-weight: 500;
-    }
-  
-    .nav-link {
-      color: #fff;
-      font-size: 1rem;
-    }
-  
-    .logo {
-      width: 80px;
-      padding: 0;
-      margin: 0;
-    }
-  
-    /* --------------- Home Page ----------------- */
-  
-    .log1 {
-      margin-top: 10rem;
-    }
-  
-    .heading {
-      width: 100%;
-      margin: auto;
-      padding: 0;
-    }
-  
-    .title {
-      font-size: 5rem;
-    }
-  
-    .title2 {
-      font-size: 2.5rem;
-      width: 50%;
-      margin: auto;
-      margin-top: -2rem;
-      text-align: right;
-    }
-  
-    #demo {
-      font-size: 1.5rem;
-      width: 100%;
-      text-align: center;
-    }
-  
-    .btn {
-      width: 90%;
-      color: #fff;
-      background-color: #f6426d;
-      font-weight: 700;
-      padding: 9px 69px 10px;
-      margin: 2%;
-      border: none;
-      border-radius: 0;
-    }
-  
-    .btn:hover {
-      background-color: #ed1346;
-    }
-  
-    /* Social Icons */
-  
-    .social-icons .fab {
-      font-size: 25px;
-    }
-  
-    /* ------------- Marquee ---------- */
-  
-    .marquee {
-      height: 3rem;
-    }
-  
-    marquee {
-      font-size: 1rem;
-      padding-top: 0.7rem;
-      font-weight: 100;
-    }
-  
-  
-    /* ------------ Sponsors ------------ */
-  
-    .sponsors-img {
-      width: 140px;
-    }
-  
-    /* ------------- Scope -------------- */
-  
-    .scope {
-      padding: 24px 0;
-    }
-  
-    .head-title {
-      font-size: 1.65rem;
-    }
-  
-    .short-title {
-      width: 100%;
-      font-size: 0.9rem;
-      padding: 2% 5%;
-    }
-  
-    /*  Abstract Section */
-  
-    .section {
-      display: block;
-      padding: 0;
-    }
-  
-    .section2 {
-      width: 100%;
-    }
-  
-    .table {
-      width: 90%;
-      margin: auto;
-    }
-  
-    th {
-      font-size: 0.67rem;
-    }
-  
-    td {
-      font-size: 0.6rem;
-    }
-  
-    table,
-    th,
-    td {
-      border: 0.5px solid #000;
-      border-collapse: collapse;
-      padding: 8px;
-    }
-  
-    /* Speakers */
-  
-    .core-team {
-      width: 47%;
-      padding: 0;
-      margin: 0 1px 12px 1px;
-    }
-  
-  
-    /* REGISTRATION FEES */
-  
-    .dark {
-      padding: 0;
-      border: 1px solid #000;
-      border-radius: 0px;
-    }
-  
-    .dark2,
-    .dark3 {
-      border: 2px solid;
-      margin: 2% 0;
-      padding: 24px;
-      border-radius: 0;
-    }
-  
-    h2 {
-      color: #A10035;
-      font-weight: bolder;
-    }
-  
-    h4 {
-      color: #A10035;
-      padding: 1%;
-      font-size: 1rem;
-    }
-  
-    .bank-details {
-      text-align: left;
-      width: 100%;
-      margin: auto;
-      font-size: 0.9rem;
-      color: #A10035;
-      padding: 4%;
-    }
-  
-  
-    /* Committee */
-  
-    .slide li {
-      font-size: 0.8rem;
-    }
-  
-  
-    /* How to reach Rourkela */
-  
-    .dark3 {
-      background-color: #f6426d;
-    }
-  
-    /* Footer */
-  
-    .footer {
-      display: block;
-      text-align: center;
-      padding: 1rem;
-    }
-  
-    .footer h6 {
-      padding: 1rem 0;
-    }
-  
-    .fab {
-      padding-left: 1rem;
-    }
-  
-  }
+
+}
