@@ -39,11 +39,12 @@ h3 {
   width: 100%;
   padding: 0;
 }
+
 .nav-link {
   color: rgb(255, 255, 255);
 }
 
-.navbar-toggler{
+.navbar-toggler {
   font-size: 1rem;
   color: #000;
   border: none;
@@ -61,10 +62,11 @@ h3 {
 
 /* --------------- Home Page ----------------- */
 
-  .container {
-    width: 70%;
-    margin: auto;
-  }
+.container {
+  width: 80%;
+  margin: auto;
+  padding-top: 2%;
+}
 
 .text-color {
   color: #fff;
@@ -93,6 +95,7 @@ h3 {
 }
 
 .title2 {
+  font-size: 2rem;
   color: #f6426d;
   margin-top: -2rem;
   text-align: right;
@@ -162,6 +165,23 @@ marquee {
   padding: 0.6rem;
 }
 
+/* ------------ About ------------ */
+
+.short-title i {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+
+/* ------------ Call for Paper ------------ */
+
+.event {
+  text-align: left;
+  font-size: 1rem;
+  color: #A10035;
+  padding: 2%;
+}
+
 
 
 /* ------------ Sponsors ------------ */
@@ -184,8 +204,6 @@ marquee {
 }
 
 .short-title {
-  width: 80%;
-  margin: auto;
   text-align: left;
   font-size: 1.125rem;
   font-weight: 600;
@@ -225,7 +243,7 @@ table {
 }
 
 .table {
-  width: 140%;
+  width: 100%;
   border: 0.5px solid #000;
 }
 
@@ -286,7 +304,8 @@ h4 {
   font-size: 1.4rem;
 }
 
-.bank-details {
+.bank-details,
+.events {
   text-align: left;
   width: 70%;
   margin: auto;
@@ -346,6 +365,7 @@ label {
   border: 1px solid #ed1346;
   padding: 0.5 0;
   margin-bottom: 2%;
+  position: inherit;
 }
 
 .dropdown:hover {
@@ -581,6 +601,10 @@ label {
 
   .slide li {
     font-size: 0.8rem;
+  }
+
+  .dropdown{
+    position: inherit;
   }
 
 
