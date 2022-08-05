@@ -340,6 +340,7 @@ label {
 
 .slide li {
   padding: 0;
+  line-height: 2rem;
 }
 
 #touch,
