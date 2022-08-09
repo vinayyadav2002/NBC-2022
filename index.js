@@ -28,7 +28,50 @@ var x = setInterval(function () {
   }
 }, 1000);
 
-
 function myFunction(x) {
   x.classList.toggle("fa-angle-double-up");
-} 
+}
+
+// google form
+
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbwLPf-_F2AS1ppVlNqCWxCcg3W9FZGW-FkkZgXKGnerww3XXxyg9KenBCHaWJgzHEo-Hg/exec";
+const form = document.forms["submit-to-google-sheet"];
+const msg = document.getElementById("msg");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      msg.innerHTML = "Thank You!";
+      setTimeout(function () {
+        msg.innerHTML = "";
+      }, 5000);
+      form.reset();
+    })
+    .catch((error) => console.error("Error!", error.message));
+});
+
+
+/* -------- Animation -------- */
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 100;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+// To check the scroll position on page load
+reveal();
