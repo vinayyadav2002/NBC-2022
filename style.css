@@ -831,7 +831,7 @@ textarea {
 
 @media screen and (max-width: 800px) {
   .tags {
-    text-align: center;
+    text-align: left;
   }
 }
 
