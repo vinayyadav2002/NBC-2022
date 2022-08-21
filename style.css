@@ -821,8 +821,6 @@ textarea {
 }
 
 
-
-/* -------- Tags -------- */
 .tags {
   display: block;
   text-align: justify;
@@ -831,7 +829,7 @@ textarea {
 
 @media screen and (max-width: 800px) {
   .tags {
-    text-align: left;
+    text-align: center;
   }
 }
 
