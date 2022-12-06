@@ -201,6 +201,7 @@ marquee {
   text-align: left;
   font-size: 1rem;
   color: #A10035;
+  padding: 1rem;
 }
 
 .tags {
@@ -390,7 +391,7 @@ h4 {
 
 /* ------------- Committee ------------- */
 
-.director{
+.director {
   width: 50%;
 }
 
@@ -620,7 +621,7 @@ textarea {
     color: #fff;
     background-color: #f6426d;
     font-weight: 700;
-    padding: 9px 69px 10px;
+    padding: 9px 45px 10px;
     margin: 2%;
     border: none;
     border-radius: 0;
@@ -633,7 +634,15 @@ textarea {
   /* Social Icons */
 
   .social-icons .fab {
-    font-size: 25px;
+    font-size: 22px;
+    padding: -1px;
+  }
+
+  .social-icons a {
+    border-radius: 5px;
+    background: #FFC4C4;
+    padding: 13px;
+    margin: 4px;
   }
 
   /* ------------- Marquee ---------- */
@@ -769,9 +778,9 @@ textarea {
 
   /* Committee */
 
-    .director {
-      width: 100%;
-    }
+  .director {
+    width: 100%;
+  }
 
   .slide li {
     font-size: 0.8rem;
