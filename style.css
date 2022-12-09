@@ -36,6 +36,10 @@ hr {
   background-color: #A10035
 }
 
+mark {
+  transition: 0.5s;
+}
+
 mark:hover {
   color: #A10035;
 }
@@ -133,6 +137,7 @@ mark:hover {
   margin: 2%;
   border: none;
   border-radius: 0;
+  transition: 0.5s;
 }
 
 .btn:hover {
@@ -225,6 +230,7 @@ marquee {
   margin: 3px 0;
   border-radius: 5px 10px 5px 10px;
   display: inline-block;
+  transition: 0.5s;
 }
 
 .tags1:hover,
@@ -273,6 +279,7 @@ marquee {
 a {
   text-decoration: none;
   color: #fff;
+  transition: 0.5s;
 }
 
 a:hover {
@@ -452,6 +459,7 @@ label {
   padding: 0.5 0;
   margin-bottom: 2%;
   position: inherit;
+  transition: 0.5s;
 }
 
 .dropdown:hover {
@@ -625,6 +633,7 @@ textarea {
     margin: 2%;
     border: none;
     border-radius: 0;
+    transition: 0.5s;
   }
 
   .btn:hover {
@@ -928,4 +937,49 @@ textarea {
   .tags {
     text-align: center;
   }
+}
+
+/* Scientific Photography */
+
+main {
+  display: flex;
+  margin: 2% 0;
+}
+
+.sci-1 {
+  width: 460px;
+  height: auto;
+  margin: 1rem;
+}
+
+.content {
+  flex: 1;
+  padding: 1rem;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.cash-prize {
+  padding: 0.5rem 0;
+  color: #F6426D;
+  font-size: 3rem;
+}
+
+.cash {
+  color: #01B8A9;
+  font-size: 3rem;
+}
+
+.btn-2 {
+  background-color: #01B8A9;
+  transition: 0.5s;
+}
+.btn-2:hover {
+  background-color: #069185;
+}
+
+.btn-3{
+  width: 100%;
+  margin: auto;
+  font-size: 2rem;
 }
