@@ -984,3 +984,39 @@ main {
   margin: auto;
   font-size: 2rem;
 }
+
+@media screen and (max-width: 800px) {
+  main {
+    display: block;
+    margin: 2% 0;
+  }
+
+  .sci-1 {
+    width: 250px;
+    height: auto;
+    margin: 1rem;
+  }
+
+  .content {
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .cash-prize {
+    padding: 0;
+    font-size: 2rem;
+  }
+
+  .prize h2{
+    font-size: 1rem;
+  }
+
+  .cash {
+    font-size: 1.5rem;
+  }
+
+  .btn-3 {
+    font-size: 1rem;
+  }
+}
