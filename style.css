@@ -974,11 +974,12 @@ main {
   background-color: #01B8A9;
   transition: 0.5s;
 }
+
 .btn-2:hover {
   background-color: #069185;
 }
 
-.btn-3{
+.btn-3 {
   width: 100%;
   margin: auto;
   font-size: 2rem;
