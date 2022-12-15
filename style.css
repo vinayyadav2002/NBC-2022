@@ -256,8 +256,23 @@ marquee {
   padding-bottom: 2%;
 }
 
+.sponsor-team {
+  width: 30%;
+  display: inline-block;
+  background-color: aliceblue;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  padding: 18px;
+  margin: 24px 18px;
+  text-align: center;
+}
+
 .sponsors-img {
-  width: 200px;
+  width: 250px;
+  border-radius: 16px;
 }
 
 
@@ -333,13 +348,6 @@ td {
 }
 
 /* Speakers */
-
-/* .core-team {
-  display: inline-block;
-  border: 2px solid #f6426d;
-  padding: 1rem;
-  margin: 1rem;
-} */
 
 .core-team {
   width: 40%;
@@ -561,10 +569,6 @@ textarea {
   color: #A10035;
 }
 
-
-
-
-
 @media(max-width: 700px) {
 
   .container {
@@ -674,8 +678,15 @@ textarea {
 
   /* ------------ Sponsors ------------ */
 
+  .sponsor-team {
+    width: 60%;
+    padding: 18px;
+    margin: 7px 18px;
+    text-align: center;
+  }
+
   .sponsors-img {
-    width: 140px;
+    width: 170px;
   }
 
   /* ------------- Scope -------------- */
@@ -1002,14 +1013,14 @@ main {
     text-align: center;
     font-family: sans-serif;
   }
-  
+
   .cash-prize {
     padding: 0;
     font-size: 2rem;
     font-family: sans-serif;
   }
 
-  .prize h2{
+  .prize h2 {
     font-size: 1rem;
   }
 
