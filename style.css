@@ -569,7 +569,7 @@ textarea {
   color: #A10035;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 800px) {
 
   .container {
     width: 100%;
@@ -577,7 +577,7 @@ textarea {
 
   h1,
   h3 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   p {
@@ -673,6 +673,10 @@ textarea {
     width: 90%;
     margin: auto;
     font-size: 1rem;
+  }
+
+  .event1 {
+    padding: 15px;
   }
 
 
@@ -780,8 +784,7 @@ textarea {
   }
 
   h4 {
-    color: #A10035;
-    padding: 1%;
+    padding: 0;
     font-size: 1rem;
   }
 
@@ -1002,30 +1005,31 @@ main {
   }
 
   .sci-1 {
-    width: 250px;
+    width: 316px;
     height: auto;
-    margin: 1rem;
+    margin: 0;
   }
 
   .content {
     padding: 1rem;
-    margin: 1rem 0;
+    margin: 0;
     text-align: center;
     font-family: sans-serif;
   }
 
   .cash-prize {
     padding: 0;
-    font-size: 2rem;
+    margin: 0;
+    font-size: 2.3rem;
     font-family: sans-serif;
   }
 
   .prize h2 {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   .cash {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
 
   .btn-3 {
