@@ -960,27 +960,27 @@ main {
 }
 
 .sci-1 {
-  width: 460px;
-  height: auto;
-  margin: 1rem;
+  width: 421px;
+  height: fit-content;
+  margin: 1rem 1rem 1rem 6rem;
 }
 
 .content {
   flex: 1;
-  padding: 1rem;
-  margin: 3rem 0;
+  padding: 0 3rem 0 0;
+  margin: 1rem 0;
   text-align: center;
 }
 
 .cash-prize {
   padding: 0.5rem 0;
   color: #F6426D;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .cash {
   color: #01B8A9;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .btn-2 {
