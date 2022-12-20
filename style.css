@@ -99,7 +99,7 @@ mark:hover {
 }
 
 .log1 {
-  margin-top: 12%;
+  margin-top: 10%;
 }
 
 .heading {
@@ -182,11 +182,12 @@ mark:hover {
 
 .marquee {
   background-color: #ed1346;
+  padding: 0.7rem;
+  font-size: 1.8rem;
+  color: #fff;
 }
 
 marquee {
-  font-size: 1.3rem;
-  color: #fff;
   height: 3rem;
   padding: 0.6rem;
 }
