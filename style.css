@@ -258,7 +258,7 @@ marquee {
 }
 
 .sponsor-team {
-  width: 30%;
+  width: auto;
   display: inline-block;
   background-color: aliceblue;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -272,7 +272,6 @@ marquee {
 }
 
 .sponsors-img {
-  width: 250px;
   border-radius: 16px;
 }
 
@@ -684,14 +683,14 @@ textarea {
   /* ------------ Sponsors ------------ */
 
   .sponsor-team {
-    width: 60%;
+    width: 90%;
     padding: 18px;
-    margin: 7px 18px;
+    margin: 7px 1px;
     text-align: center;
   }
 
   .sponsors-img {
-    width: 170px;
+    width: 250px;
   }
 
   /* ------------- Scope -------------- */
